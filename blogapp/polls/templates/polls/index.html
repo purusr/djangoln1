@@ -1,0 +1,13 @@
+{% if Studentlist %}
+    <ul>
+    {% for Student in Studentlist %}
+        <li>{{ Student.Student_name }}</li>
+        <li>{{ Student.Student_roll }}</li>
+        <li>{{ Student.Student_contact }}</li>
+        <li>{{ Student.Student_idenntity }}</li>
+        -------------------------------------------
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No data available.</p>
+{% endif %}
